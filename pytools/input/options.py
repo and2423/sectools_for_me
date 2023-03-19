@@ -1,5 +1,8 @@
 import requests
 
+# Testing options and seeing what if anything
+# is allowed. Not finished!
+
 def options(website):
     r = requests.options("https://"+website)
     try:
@@ -15,6 +18,7 @@ def options(website):
         print(f"Allowed Headers: {r.headers['allow']}")
     except:
         print("No 'allow' headers.")
+
 
 
 if __name__ == "__main__":
