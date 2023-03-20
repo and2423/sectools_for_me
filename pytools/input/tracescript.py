@@ -14,7 +14,7 @@ def trace_input(URL, schema):
     print()
     print(f"Status: {r.status_code}")
     print(f"Headers: {r.headers}")
-    print(f"Body: {r.content}")
+    print(f"Body: {r.text}")
 
 
 
